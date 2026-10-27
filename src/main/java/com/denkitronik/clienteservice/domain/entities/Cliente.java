@@ -27,7 +27,7 @@ public class Cliente {
 
     @NotEmpty(message = "El email no puede estar vacío")
     @Email(message = "Debe ser una dirección de email válida")
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String email;
 
     @Column(name = "create_at")

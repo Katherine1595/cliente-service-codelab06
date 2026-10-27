@@ -25,7 +25,6 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      # Testcontainers usa el Docker del runner (ubuntu-latest trae Docker instalado)
       - name: Ejecuta todos los tests
         run: mvn test
 
